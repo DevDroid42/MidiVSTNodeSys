@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Platforms>x64;x86</Platforms>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Reference all of Windows Forms -->
+    <FrameworkReference Include="Microsoft.WindowsDesktop.App" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="VST.NET2-Plugin" Version="2.0.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\NodeSys\NodeSysCore\NodeSysCore.csproj" />
+  </ItemGroup>
+
+</Project>
