@@ -36,9 +36,9 @@ namespace VstNetMidiPlugin
             }
         }
 
-        public void PublishTable()
+        public void PublishTable(string ID)
         {
-            networking.SendByteArray("table", notes);
+            networking.SendByteArray(ID, notes);
         }
     }    
 }

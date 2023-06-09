@@ -46,5 +46,10 @@ namespace VstNetMidiPlugin.Dmp
 
             return outEvent;
         }
+
+        public string GetIndex()
+        {
+            return ((int)(_parameters.GainMgr.CurrentValue)).ToString();
+        }
     }
 }

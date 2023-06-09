@@ -25,14 +25,14 @@ namespace VstNetMidiPlugin.Dmp
             {
                 Category = paramCategory,
                 CanBeAutomated = true,
-                Name = "Gain",
+                Name = "Index",
                 Label = "Db",
                 ShortLabel = "Db",
-                MinInteger = -100,
-                MaxInteger = 100,
-                LargeStepFloat = 20.0f,
+                MinInteger = 0,
+                MaxInteger = 16,
+                LargeStepFloat = 1f,
                 SmallStepFloat = 1.0f,
-                StepFloat = 10.0f,
+                StepFloat = 1f,
                 DefaultValue = 0.0f
             };
 

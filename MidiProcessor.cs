@@ -107,9 +107,9 @@ namespace VstNetMidiPlugin
                 _midiHost.Process(outEvents);
             }
 
-            // Clear the cache, we've processed the events.
+            // Clear the cache, we've processed the events. 
             CurrentEvents = null;
-            midiTable.PublishTable();
+            midiTable.PublishTable("Midi" + Gain.GetIndex());
         }        
         #region IVstPluginMidiSource Members
 
